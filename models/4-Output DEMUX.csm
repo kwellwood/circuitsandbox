@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE model [
+    <!ELEMENT model (component*)>
+    <!ELEMENT component (input*)>
+    <!ATTLIST component
+        type CDATA #REQUIRED
+        id CDATA #REQUIRED
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+    <!ELEMENT input (wireNode*)>
+    <!ATTLIST input
+        number CDATA #REQUIRED
+        sourceId CDATA #REQUIRED
+        sourcePin CDATA #REQUIRED
+        wireId CDATA #REQUIRED>
+    <!ELEMENT wireNode EMPTY>
+    <!ATTLIST wireNode
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+]><model>
+    <component type="and3" id="15" x="310" y="360">
+        <input number="0" sourceId="4" sourcePin="0" wireId="24">
+            <wireNode x="210" y="80" />
+            <wireNode x="210" y="370" />
+        </input>
+        <input number="1" sourceId="7" sourcePin="0" wireId="27">
+            <wireNode x="280" y="140" />
+            <wireNode x="280" y="380" />
+        </input>
+        <input number="2" sourceId="3" sourcePin="0" wireId="21">
+            <wireNode x="160" y="210" />
+            <wireNode x="160" y="390" />
+        </input>
+    </component>
+    <component type="not" id="4" x="130" y="60">
+        <input number="0" sourceId="1" sourcePin="0" wireId="11">
+        </input>
+    </component>
+    <component type="LED" id="30" x="420" y="270">
+        <input number="0" sourceId="14" sourcePin="0" wireId="35">
+        </input>
+    </component>
+    <component type="LED" id="31" x="420" y="360">
+        <input number="0" sourceId="15" sourcePin="0" wireId="34">
+        </input>
+    </component>
+    <component type="and3" id="16" x="310" y="450">
+        <input number="0" sourceId="6" sourcePin="0" wireId="18">
+            <wireNode x="300" y="80" />
+            <wireNode x="300" y="460" />
+        </input>
+        <input number="1" sourceId="7" sourcePin="0" wireId="19">
+            <wireNode x="280" y="140" />
+            <wireNode x="280" y="470" />
+        </input>
+        <input number="2" sourceId="3" sourcePin="0" wireId="22">
+            <wireNode x="160" y="210" />
+            <wireNode x="160" y="480" />
+        </input>
+    </component>
+    <component type="switch" id="3" x="50" y="190">
+    </component>
+    <component type="not" id="7" x="220" y="120">
+        <input number="0" sourceId="5" sourcePin="0" wireId="9">
+        </input>
+    </component>
+    <component type="and3" id="12" x="310" y="180">
+        <input number="0" sourceId="4" sourcePin="0" wireId="23">
+            <wireNode x="210" y="80" />
+            <wireNode x="210" y="190" />
+        </input>
+        <input number="1" sourceId="5" sourcePin="0" wireId="25">
+            <wireNode x="190" y="140" />
+            <wireNode x="190" y="200" />
+        </input>
+        <input number="2" sourceId="3" sourcePin="0" wireId="13">
+        </input>
+    </component>
+    <component type="LED" id="32" x="420" y="450">
+        <input number="0" sourceId="16" sourcePin="0" wireId="33">
+        </input>
+    </component>
+    <component type="switch" id="2" x="50" y="120">
+    </component>
+    <component type="LED" id="28" x="420" y="180">
+        <input number="0" sourceId="12" sourcePin="0" wireId="29">
+        </input>
+    </component>
+    <component type="not" id="6" x="220" y="60">
+        <input number="0" sourceId="4" sourcePin="0" wireId="8">
+        </input>
+    </component>
+    <component type="switch" id="1" x="50" y="60">
+    </component>
+    <component type="and3" id="14" x="310" y="270">
+        <input number="0" sourceId="6" sourcePin="0" wireId="17">
+            <wireNode x="300" y="80" />
+            <wireNode x="300" y="280" />
+        </input>
+        <input number="1" sourceId="5" sourcePin="0" wireId="26">
+            <wireNode x="190" y="140" />
+            <wireNode x="190" y="290" />
+        </input>
+        <input number="2" sourceId="3" sourcePin="0" wireId="20">
+            <wireNode x="160" y="210" />
+            <wireNode x="160" y="300" />
+        </input>
+    </component>
+    <component type="not" id="5" x="130" y="120">
+        <input number="0" sourceId="2" sourcePin="0" wireId="10">
+        </input>
+    </component>
+</model>

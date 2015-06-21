@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE model [
+    <!ELEMENT model (component*)>
+    <!ELEMENT component (input*)>
+    <!ATTLIST component
+        type CDATA #REQUIRED
+        id CDATA #REQUIRED
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+    <!ELEMENT input (wireNode*)>
+    <!ATTLIST input
+        number CDATA #REQUIRED
+        sourceId CDATA #REQUIRED
+        sourcePin CDATA #REQUIRED
+        wireId CDATA #REQUIRED>
+    <!ELEMENT wireNode EMPTY>
+    <!ATTLIST wireNode
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+]><model>
+    <component type="jkflipflop" id="4" x="490" y="280">
+        <input number="0" sourceId="3" sourcePin="0" wireId="17">
+        </input>
+        <input number="1" sourceId="1" sourcePin="0" wireId="7">
+            <wireNode x="320" y="300" />
+            <wireNode x="320" y="340" />
+            <wireNode x="460" y="340" />
+            <wireNode x="460" y="300" />
+        </input>
+        <input number="2" sourceId="3" sourcePin="0" wireId="22">
+            <wireNode x="480" y="290" />
+            <wireNode x="480" y="310" />
+        </input>
+        <input number="3" sourceId="69" sourcePin="0" wireId="70">
+            <wireNode x="440" y="480" />
+            <wireNode x="440" y="270" />
+            <wireNode x="520" y="270" />
+        </input>
+        <input number="4" sourceId="61" sourcePin="0" wireId="66">
+            <wireNode x="520" y="550" />
+        </input>
+    </component>
+    <component type="ground" id="58" x="280" y="420">
+    </component>
+    <component type="not" id="55" x="300" y="350">
+        <input number="0" sourceId="58" sourcePin="0" wireId="59">
+        </input>
+    </component>
+    <component type="switch" id="40" x="70" y="10">
+    </component>
+    <component type="LED" id="48" x="220" y="20">
+        <input number="0" sourceId="39" sourcePin="0" wireId="49">
+        </input>
+    </component>
+    <component type="jkflipflop" id="3" x="350" y="280">
+        <input number="0" sourceId="55" sourcePin="0" wireId="57">
+        </input>
+        <input number="1" sourceId="1" sourcePin="0" wireId="9">
+        </input>
+        <input number="2" sourceId="55" sourcePin="0" wireId="56">
+        </input>
+    </component>
+    <component type="jkflipflop" id="39" x="150" y="40">
+        <input number="0" sourceId="40" sourcePin="0" wireId="44">
+        </input>
+        <input number="1" sourceId="42" sourcePin="0" wireId="43">
+        </input>
+        <input number="2" sourceId="41" sourcePin="0" wireId="45">
+        </input>
+    </component>
+    <component type="and2" id="27" x="570" y="230">
+        <input number="0" sourceId="3" sourcePin="0" wireId="32">
+            <wireNode x="410" y="220" />
+            <wireNode x="510" y="220" />
+            <wireNode x="570" y="220" />
+        </input>
+        <input number="1" sourceId="4" sourcePin="0" wireId="34">
+            <wireNode x="550" y="260" />
+        </input>
+    </component>
+    <component type="hexdigit" id="2" x="600" y="50">
+        <input number="0" sourceId="3" sourcePin="0" wireId="18">
+            <wireNode x="410" y="60" />
+        </input>
+        <input number="1" sourceId="4" sourcePin="0" wireId="19">
+            <wireNode x="550" y="80" />
+        </input>
+        <input number="2" sourceId="5" sourcePin="0" wireId="20">
+            <wireNode x="700" y="80" />
+        </input>
+        <input number="3" sourceId="6" sourcePin="0" wireId="21">
+            <wireNode x="840" y="60" />
+        </input>
+    </component>
+    <component type="switch" id="41" x="70" y="70">
+    </component>
+    <component type="and3" id="28" x="720" y="230">
+        <input number="0" sourceId="4" sourcePin="0" wireId="36">
+            <wireNode x="550" y="210" />
+            <wireNode x="720" y="210" />
+        </input>
+        <input number="1" sourceId="3" sourcePin="0" wireId="35">
+            <wireNode x="410" y="220" />
+            <wireNode x="710" y="220" />
+            <wireNode x="710" y="250" />
+        </input>
+        <input number="2" sourceId="5" sourcePin="0" wireId="31">
+            <wireNode x="700" y="260" />
+        </input>
+    </component>
+    <component type="button" id="60" x="220" y="530">
+    </component>
+    <component type="jkflipflop" id="6" x="780" y="280">
+        <input number="0" sourceId="28" sourcePin="0" wireId="29">
+            <wireNode x="770" y="290" />
+        </input>
+        <input number="1" sourceId="1" sourcePin="0" wireId="10">
+            <wireNode x="320" y="300" />
+            <wireNode x="320" y="340" />
+            <wireNode x="750" y="340" />
+            <wireNode x="750" y="300" />
+        </input>
+        <input number="2" sourceId="28" sourcePin="0" wireId="30">
+            <wireNode x="770" y="310" />
+        </input>
+        <input number="3" sourceId="69" sourcePin="0" wireId="72">
+            <wireNode x="760" y="480" />
+            <wireNode x="760" y="270" />
+            <wireNode x="810" y="270" />
+        </input>
+        <input number="4" sourceId="61" sourcePin="0" wireId="68">
+            <wireNode x="810" y="550" />
+        </input>
+    </component>
+    <component type="not" id="61" x="310" y="530">
+        <input number="0" sourceId="60" sourcePin="0" wireId="65">
+        </input>
+    </component>
+    <component type="button" id="1" x="240" y="280">
+    </component>
+    <component type="LED" id="46" x="220" y="60">
+        <input number="0" sourceId="39" sourcePin="1" wireId="47">
+        </input>
+    </component>
+    <component type="button" id="42" x="10" y="40">
+    </component>
+    <component type="jkflipflop" id="5" x="640" y="280">
+        <input number="0" sourceId="27" sourcePin="0" wireId="37">
+            <wireNode x="630" y="250" />
+            <wireNode x="630" y="290" />
+        </input>
+        <input number="1" sourceId="1" sourcePin="0" wireId="8">
+            <wireNode x="320" y="300" />
+            <wireNode x="320" y="340" />
+            <wireNode x="590" y="340" />
+            <wireNode x="590" y="300" />
+        </input>
+        <input number="2" sourceId="27" sourcePin="0" wireId="38">
+            <wireNode x="630" y="250" />
+            <wireNode x="630" y="310" />
+        </input>
+        <input number="3" sourceId="69" sourcePin="0" wireId="71">
+            <wireNode x="610" y="480" />
+            <wireNode x="610" y="270" />
+            <wireNode x="670" y="270" />
+        </input>
+        <input number="4" sourceId="61" sourcePin="0" wireId="67">
+            <wireNode x="670" y="550" />
+        </input>
+    </component>
+    <component type="vcc" id="69" x="230" y="480">
+    </component>
+</model>

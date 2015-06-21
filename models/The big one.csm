@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE model [
+    <!ELEMENT model (component*)>
+    <!ELEMENT component (input*)>
+    <!ATTLIST component
+        type CDATA #REQUIRED
+        id CDATA #REQUIRED
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+    <!ELEMENT input (wireNode*)>
+    <!ATTLIST input
+        number CDATA #REQUIRED
+        sourceId CDATA #REQUIRED
+        sourcePin CDATA #REQUIRED
+        wireId CDATA #REQUIRED>
+    <!ELEMENT wireNode EMPTY>
+    <!ATTLIST wireNode
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+]><model>
+    <component type="button" id="15" x="10" y="580">
+    </component>
+    <component type="button" id="8" x="10" y="300">
+    </component>
+    <component type="LED" id="40" x="460" y="60">
+        <input number="0" sourceId="49" sourcePin="1" wireId="69">
+            <wireNode x="370" y="270" />
+            <wireNode x="370" y="80" />
+        </input>
+    </component>
+    <component type="LED" id="23" x="460" y="540">
+        <input number="0" sourceId="49" sourcePin="13" wireId="81">
+            <wireNode x="380" y="390" />
+            <wireNode x="380" y="560" />
+        </input>
+    </component>
+    <component type="button" id="16" x="10" y="620">
+    </component>
+    <component type="LED" id="35" x="460" y="260">
+        <input number="0" sourceId="49" sourcePin="6" wireId="74">
+            <wireNode x="420" y="320" />
+            <wireNode x="420" y="280" />
+        </input>
+    </component>
+    <component type="button" id="7" x="10" y="260">
+    </component>
+    <component type="custom:components/The big one.csc" id="49" x="170" y="250">
+        <input number="0" sourceId="1" sourcePin="0" wireId="50">
+            <wireNode x="150" y="40" />
+            <wireNode x="150" y="260" />
+        </input>
+        <input number="1" sourceId="2" sourcePin="0" wireId="51">
+            <wireNode x="140" y="80" />
+            <wireNode x="140" y="270" />
+        </input>
+        <input number="2" sourceId="3" sourcePin="0" wireId="52">
+            <wireNode x="130" y="120" />
+            <wireNode x="130" y="280" />
+        </input>
+        <input number="3" sourceId="4" sourcePin="0" wireId="53">
+            <wireNode x="120" y="160" />
+            <wireNode x="120" y="290" />
+        </input>
+        <input number="4" sourceId="5" sourcePin="0" wireId="54">
+            <wireNode x="110" y="200" />
+            <wireNode x="110" y="300" />
+        </input>
+        <input number="5" sourceId="6" sourcePin="0" wireId="55">
+            <wireNode x="100" y="240" />
+            <wireNode x="100" y="310" />
+        </input>
+        <input number="6" sourceId="7" sourcePin="0" wireId="56">
+            <wireNode x="90" y="280" />
+            <wireNode x="90" y="320" />
+        </input>
+        <input number="7" sourceId="8" sourcePin="0" wireId="57">
+            <wireNode x="80" y="320" />
+            <wireNode x="80" y="330" />
+        </input>
+        <input number="8" sourceId="9" sourcePin="0" wireId="58">
+            <wireNode x="80" y="360" />
+            <wireNode x="80" y="340" />
+        </input>
+        <input number="9" sourceId="10" sourcePin="0" wireId="59">
+            <wireNode x="90" y="400" />
+            <wireNode x="90" y="350" />
+        </input>
+        <input number="10" sourceId="11" sourcePin="0" wireId="60">
+            <wireNode x="100" y="440" />
+            <wireNode x="100" y="360" />
+        </input>
+        <input number="11" sourceId="13" sourcePin="0" wireId="61">
+            <wireNode x="110" y="480" />
+            <wireNode x="110" y="370" />
+        </input>
+        <input number="12" sourceId="12" sourcePin="0" wireId="62">
+            <wireNode x="120" y="520" />
+            <wireNode x="120" y="380" />
+        </input>
+        <input number="13" sourceId="14" sourcePin="0" wireId="65">
+            <wireNode x="130" y="560" />
+            <wireNode x="130" y="390" />
+        </input>
+        <input number="14" sourceId="15" sourcePin="0" wireId="66">
+            <wireNode x="140" y="600" />
+            <wireNode x="140" y="400" />
+        </input>
+        <input number="15" sourceId="16" sourcePin="0" wireId="67">
+            <wireNode x="150" y="640" />
+            <wireNode x="150" y="410" />
+        </input>
+    </component>
+    <component type="LED" id="22" x="460" y="500">
+        <input number="0" sourceId="49" sourcePin="12" wireId="80">
+            <wireNode x="390" y="380" />
+            <wireNode x="390" y="520" />
+        </input>
+    </component>
+    <component type="LED" id="41" x="460" y="20">
+        <input number="0" sourceId="49" sourcePin="0" wireId="68">
+            <wireNode x="360" y="260" />
+            <wireNode x="360" y="40" />
+        </input>
+    </component>
+    <component type="button" id="9" x="10" y="340">
+    </component>
+    <component type="LED" id="21" x="460" y="460">
+        <input number="0" sourceId="49" sourcePin="11" wireId="79">
+            <wireNode x="400" y="370" />
+            <wireNode x="400" y="480" />
+        </input>
+    </component>
+    <component type="button" id="6" x="10" y="220">
+    </component>
+    <component type="button" id="1" x="10" y="20">
+    </component>
+    <component type="button" id="14" x="10" y="540">
+    </component>
+    <component type="LED" id="24" x="460" y="580">
+        <input number="0" sourceId="49" sourcePin="14" wireId="82">
+            <wireNode x="370" y="400" />
+            <wireNode x="370" y="600" />
+        </input>
+    </component>
+    <component type="button" id="4" x="10" y="140">
+    </component>
+    <component type="LED" id="36" x="460" y="220">
+        <input number="0" sourceId="49" sourcePin="5" wireId="73">
+            <wireNode x="410" y="310" />
+            <wireNode x="410" y="240" />
+        </input>
+    </component>
+    <component type="LED" id="19" x="460" y="380">
+        <input number="0" sourceId="49" sourcePin="9" wireId="76">
+            <wireNode x="420" y="350" />
+            <wireNode x="420" y="400" />
+        </input>
+    </component>
+    <component type="button" id="11" x="10" y="420">
+    </component>
+    <component type="LED" id="18" x="460" y="340">
+        <input number="0" sourceId="49" sourcePin="8" wireId="77">
+            <wireNode x="430" y="340" />
+            <wireNode x="430" y="360" />
+        </input>
+    </component>
+    <component type="button" id="3" x="10" y="100">
+    </component>
+    <component type="LED" id="39" x="460" y="100">
+        <input number="0" sourceId="49" sourcePin="2" wireId="70">
+            <wireNode x="380" y="280" />
+            <wireNode x="380" y="120" />
+        </input>
+    </component>
+    <component type="button" id="12" x="10" y="500">
+    </component>
+    <component type="LED" id="17" x="460" y="300">
+        <input number="0" sourceId="49" sourcePin="7" wireId="75">
+            <wireNode x="430" y="330" />
+            <wireNode x="430" y="320" />
+        </input>
+    </component>
+    <component type="button" id="2" x="10" y="60">
+    </component>
+    <component type="button" id="13" x="10" y="460">
+    </component>
+    <component type="LED" id="38" x="460" y="140">
+        <input number="0" sourceId="49" sourcePin="3" wireId="71">
+            <wireNode x="390" y="290" />
+            <wireNode x="390" y="160" />
+        </input>
+    </component>
+    <component type="LED" id="20" x="460" y="420">
+        <input number="0" sourceId="49" sourcePin="10" wireId="78">
+            <wireNode x="410" y="360" />
+            <wireNode x="410" y="440" />
+        </input>
+    </component>
+    <component type="LED" id="37" x="460" y="180">
+        <input number="0" sourceId="49" sourcePin="4" wireId="72">
+            <wireNode x="400" y="300" />
+            <wireNode x="400" y="200" />
+        </input>
+    </component>
+    <component type="LED" id="25" x="460" y="620">
+        <input number="0" sourceId="49" sourcePin="15" wireId="83">
+            <wireNode x="360" y="410" />
+            <wireNode x="360" y="640" />
+        </input>
+    </component>
+    <component type="button" id="10" x="10" y="380">
+    </component>
+    <component type="button" id="5" x="10" y="180">
+    </component>
+</model>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE model [
+    <!ELEMENT model (component*)>
+    <!ELEMENT component (input*)>
+    <!ATTLIST component
+        type CDATA #REQUIRED
+        id CDATA #REQUIRED
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+    <!ELEMENT input (wireNode*)>
+    <!ATTLIST input
+        number CDATA #REQUIRED
+        sourceId CDATA #REQUIRED
+        sourcePin CDATA #REQUIRED
+        wireId CDATA #REQUIRED>
+    <!ELEMENT wireNode EMPTY>
+    <!ATTLIST wireNode
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+]><model>
+    <component type="and2" id="1" x="180" y="90">
+        <input number="1" sourceId="1" sourcePin="0" wireId="3">
+            <wireNode x="260" y="110" />
+            <wireNode x="260" y="160" />
+            <wireNode x="160" y="160" />
+            <wireNode x="160" y="120" />
+        </input>
+    </component>
+</model>

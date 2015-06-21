@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE model [
+    <!ELEMENT model (component*)>
+    <!ELEMENT component (input*)>
+    <!ATTLIST component
+        type CDATA #REQUIRED
+        id CDATA #REQUIRED
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+    <!ELEMENT input (wireNode*)>
+    <!ATTLIST input
+        number CDATA #REQUIRED
+        sourceId CDATA #REQUIRED
+        sourcePin CDATA #REQUIRED
+        wireId CDATA #REQUIRED>
+    <!ELEMENT wireNode EMPTY>
+    <!ATTLIST wireNode
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+]><model>
+    <component type="or2" id="107" x="510" y="350">
+        <input number="0" sourceId="105" sourcePin="0" wireId="110">
+        </input>
+        <input number="1" sourceId="106" sourcePin="0" wireId="111">
+        </input>
+    </component>
+    <component type="LED" id="246" x="1200" y="470">
+        <input number="0" sourceId="240" sourcePin="0" wireId="247">
+        </input>
+    </component>
+    <component type="switch" id="158" x="50" y="830">
+    </component>
+    <component type="switch" id="123" x="30" y="430">
+    </component>
+    <component type="custom:components/FullAdder.csc" id="241" x="1070" y="570">
+        <input number="0" sourceId="258" sourcePin="0" wireId="259">
+        </input>
+        <input number="1" sourceId="254" sourcePin="0" wireId="274">
+            <wireNode x="1040" y="640" />
+            <wireNode x="1040" y="600" />
+        </input>
+        <input number="2" sourceId="278" sourcePin="0" wireId="279">
+            <wireNode x="1060" y="740" />
+            <wireNode x="1060" y="620" />
+        </input>
+    </component>
+    <component type="xor2" id="251" x="950" y="310">
+        <input number="0" sourceId="264" sourcePin="0" wireId="270">
+        </input>
+        <input number="1" sourceId="278" sourcePin="0" wireId="283">
+            <wireNode x="910" y="740" />
+            <wireNode x="910" y="340" />
+        </input>
+    </component>
+    <component type="custom:components/FullAdder.csc" id="240" x="1070" y="470">
+        <input number="0" sourceId="257" sourcePin="0" wireId="260">
+        </input>
+        <input number="1" sourceId="253" sourcePin="0" wireId="275">
+            <wireNode x="1040" y="540" />
+            <wireNode x="1040" y="500" />
+        </input>
+        <input number="2" sourceId="241" sourcePin="1" wireId="284">
+            <wireNode x="1150" y="610" />
+            <wireNode x="1150" y="550" />
+            <wireNode x="1060" y="550" />
+            <wireNode x="1060" y="520" />
+        </input>
+    </component>
+    <component type="LED" id="230" x="650" y="360">
+        <input number="0" sourceId="104" sourcePin="0" wireId="236">
+            <wireNode x="650" y="280" />
+        </input>
+    </component>
+    <component type="xor2" id="86" x="360" y="60">
+        <input number="0" sourceId="91" sourcePin="0" wireId="95">
+        </input>
+        <input number="1" sourceId="161" sourcePin="0" wireId="162">
+            <wireNode x="360" y="130" />
+        </input>
+    </component>
+    <component type="xor2" id="129" x="500" y="640">
+        <input number="0" sourceId="130" sourcePin="0" wireId="131">
+        </input>
+        <input number="1" sourceId="158" sourcePin="0" wireId="160">
+            <wireNode x="210" y="860" />
+            <wireNode x="500" y="860" />
+        </input>
+    </component>
+    <component type="switch" id="124" x="80" y="480">
+    </component>
+    <component type="xor2" id="169" x="190" y="490">
+        <input number="0" sourceId="124" sourcePin="0" wireId="170">
+        </input>
+        <input number="1" sourceId="158" sourcePin="0" wireId="178">
+            <wireNode x="180" y="790" />
+            <wireNode x="180" y="520" />
+        </input>
+    </component>
+    <component type="xor2" id="252" x="950" y="410">
+        <input number="0" sourceId="266" sourcePin="0" wireId="271">
+        </input>
+        <input number="1" sourceId="278" sourcePin="0" wireId="282">
+            <wireNode x="920" y="740" />
+            <wireNode x="920" y="440" />
+        </input>
+    </component>
+    <component type="xor2" id="117" x="360" y="440">
+        <input number="0" sourceId="123" sourcePin="0" wireId="125">
+        </input>
+        <input number="1" sourceId="169" sourcePin="0" wireId="171">
+            <wireNode x="360" y="510" />
+        </input>
+    </component>
+    <component type="and2" id="106" x="380" y="360">
+        <input number="0" sourceId="93" sourcePin="0" wireId="112">
+            <wireNode x="330" y="260" />
+            <wireNode x="330" y="370" />
+        </input>
+        <input number="1" sourceId="165" sourcePin="0" wireId="168">
+            <wireNode x="310" y="320" />
+            <wireNode x="310" y="390" />
+        </input>
+    </component>
+    <component type="switch" id="257" x="820" y="460">
+    </component>
+    <component type="switch" id="268" x="850" y="610">
+    </component>
+    <component type="and2" id="119" x="440" y="500">
+        <input number="0" sourceId="117" sourcePin="0" wireId="144">
+        </input>
+        <input number="1" sourceId="132" sourcePin="0" wireId="146">
+            <wireNode x="600" y="740" />
+            <wireNode x="600" y="610" />
+            <wireNode x="440" y="610" />
+        </input>
+    </component>
+    <component type="switch" id="258" x="820" y="560">
+    </component>
+    <component type="LED" id="250" x="1270" y="200">
+        <input number="0" sourceId="238" sourcePin="1" wireId="263">
+            <wireNode x="1160" y="300" />
+            <wireNode x="1160" y="220" />
+        </input>
+    </component>
+    <component type="LED" id="231" x="650" y="170">
+        <input number="0" sourceId="87" sourcePin="0" wireId="237">
+            <wireNode x="650" y="90" />
+        </input>
+    </component>
+    <component type="xor2" id="130" x="360" y="630">
+        <input number="0" sourceId="137" sourcePin="0" wireId="139">
+        </input>
+        <input number="1" sourceId="173" sourcePin="0" wireId="175">
+            <wireNode x="360" y="700" />
+        </input>
+    </component>
+    <component type="xor2" id="103" x="360" y="250">
+        <input number="0" sourceId="93" sourcePin="0" wireId="108">
+        </input>
+        <input number="1" sourceId="165" sourcePin="0" wireId="167">
+            <wireNode x="360" y="320" />
+        </input>
+    </component>
+    <component type="switch" id="264" x="850" y="300">
+    </component>
+    <component type="xor2" id="165" x="190" y="300">
+        <input number="0" sourceId="94" sourcePin="0" wireId="166">
+        </input>
+        <input number="1" sourceId="158" sourcePin="0" wireId="179">
+            <wireNode x="170" y="780" />
+            <wireNode x="170" y="330" />
+        </input>
+    </component>
+    <component type="LED" id="248" x="1200" y="570">
+        <input number="0" sourceId="241" sourcePin="0" wireId="249">
+        </input>
+    </component>
+    <component type="and2" id="121" x="380" y="550">
+        <input number="0" sourceId="123" sourcePin="0" wireId="128">
+            <wireNode x="330" y="450" />
+            <wireNode x="330" y="560" />
+        </input>
+        <input number="1" sourceId="169" sourcePin="0" wireId="172">
+            <wireNode x="310" y="510" />
+            <wireNode x="310" y="580" />
+        </input>
+    </component>
+    <component type="xor2" id="254" x="950" y="620">
+        <input number="0" sourceId="268" sourcePin="0" wireId="273">
+        </input>
+        <input number="1" sourceId="278" sourcePin="0" wireId="280">
+            <wireNode x="940" y="740" />
+            <wireNode x="940" y="650" />
+        </input>
+    </component>
+    <component type="LED" id="232" x="650" y="550">
+        <input number="0" sourceId="116" sourcePin="0" wireId="235">
+            <wireNode x="650" y="470" />
+        </input>
+    </component>
+    <component type="switch" id="94" x="80" y="290">
+    </component>
+    <component type="xor2" id="87" x="500" y="70">
+        <input number="0" sourceId="86" sourcePin="0" wireId="96">
+        </input>
+        <input number="1" sourceId="107" sourcePin="0" wireId="151">
+            <wireNode x="610" y="380" />
+            <wireNode x="610" y="120" />
+            <wireNode x="500" y="120" />
+        </input>
+    </component>
+    <component type="xor2" id="104" x="500" y="260">
+        <input number="0" sourceId="103" sourcePin="0" wireId="109">
+        </input>
+        <input number="1" sourceId="115" sourcePin="0" wireId="149">
+            <wireNode x="620" y="570" />
+            <wireNode x="620" y="310" />
+            <wireNode x="500" y="310" />
+        </input>
+    </component>
+    <component type="switch" id="278" x="830" y="720">
+    </component>
+    <component type="xor2" id="161" x="190" y="110">
+        <input number="0" sourceId="92" sourcePin="0" wireId="164">
+        </input>
+        <input number="1" sourceId="158" sourcePin="0" wireId="180">
+            <wireNode x="160" y="770" />
+            <wireNode x="160" y="140" />
+        </input>
+    </component>
+    <component type="LED" id="244" x="1200" y="360">
+        <input number="0" sourceId="239" sourcePin="0" wireId="245">
+        </input>
+    </component>
+    <component type="and2" id="134" x="380" y="740">
+        <input number="0" sourceId="137" sourcePin="0" wireId="142">
+            <wireNode x="240" y="640" />
+            <wireNode x="330" y="640" />
+            <wireNode x="330" y="750" />
+        </input>
+        <input number="1" sourceId="173" sourcePin="0" wireId="176">
+            <wireNode x="310" y="700" />
+            <wireNode x="310" y="770" />
+        </input>
+    </component>
+    <component type="and2" id="105" x="440" y="310">
+        <input number="0" sourceId="103" sourcePin="0" wireId="143">
+        </input>
+        <input number="1" sourceId="115" sourcePin="0" wireId="148">
+            <wireNode x="600" y="550" />
+            <wireNode x="600" y="420" />
+            <wireNode x="440" y="420" />
+        </input>
+    </component>
+    <component type="switch" id="137" x="30" y="620">
+    </component>
+    <component type="LED" id="233" x="650" y="740">
+        <input number="0" sourceId="129" sourcePin="0" wireId="234">
+            <wireNode x="650" y="660" />
+        </input>
+    </component>
+    <component type="xor2" id="116" x="500" y="450">
+        <input number="0" sourceId="117" sourcePin="0" wireId="118">
+        </input>
+        <input number="1" sourceId="132" sourcePin="0" wireId="147">
+            <wireNode x="610" y="760" />
+            <wireNode x="610" y="500" />
+            <wireNode x="500" y="500" />
+        </input>
+    </component>
+    <component type="or2" id="132" x="510" y="730">
+        <input number="0" sourceId="133" sourcePin="0" wireId="135">
+        </input>
+        <input number="1" sourceId="134" sourcePin="0" wireId="136">
+        </input>
+    </component>
+    <component type="xor2" id="253" x="950" y="520">
+        <input number="0" sourceId="267" sourcePin="0" wireId="272">
+        </input>
+        <input number="1" sourceId="278" sourcePin="0" wireId="281">
+            <wireNode x="930" y="740" />
+            <wireNode x="930" y="550" />
+        </input>
+    </component>
+    <component type="switch" id="93" x="30" y="240">
+    </component>
+    <component type="or2" id="115" x="510" y="540">
+        <input number="0" sourceId="119" sourcePin="0" wireId="120">
+        </input>
+        <input number="1" sourceId="121" sourcePin="0" wireId="122">
+        </input>
+    </component>
+    <component type="and2" id="88" x="440" y="120">
+        <input number="0" sourceId="86" sourcePin="0" wireId="99">
+        </input>
+        <input number="1" sourceId="107" sourcePin="0" wireId="150">
+            <wireNode x="600" y="360" />
+            <wireNode x="600" y="230" />
+            <wireNode x="440" y="230" />
+        </input>
+    </component>
+    <component type="and2" id="90" x="380" y="170">
+        <input number="0" sourceId="91" sourcePin="0" wireId="101">
+            <wireNode x="330" y="70" />
+            <wireNode x="330" y="180" />
+        </input>
+        <input number="1" sourceId="161" sourcePin="0" wireId="163">
+            <wireNode x="310" y="130" />
+            <wireNode x="310" y="200" />
+        </input>
+    </component>
+    <component type="LED" id="242" x="1200" y="260">
+        <input number="0" sourceId="238" sourcePin="0" wireId="243">
+        </input>
+    </component>
+    <component type="custom:components/FullAdder.csc" id="239" x="1070" y="360">
+        <input number="0" sourceId="256" sourcePin="0" wireId="261">
+        </input>
+        <input number="1" sourceId="252" sourcePin="0" wireId="276">
+            <wireNode x="1040" y="430" />
+            <wireNode x="1040" y="390" />
+        </input>
+        <input number="2" sourceId="240" sourcePin="1" wireId="285">
+            <wireNode x="1150" y="510" />
+            <wireNode x="1150" y="440" />
+            <wireNode x="1060" y="440" />
+            <wireNode x="1060" y="410" />
+        </input>
+    </component>
+    <component type="switch" id="255" x="820" y="250">
+    </component>
+    <component type="switch" id="267" x="850" y="510">
+    </component>
+    <component type="switch" id="91" x="30" y="50">
+    </component>
+    <component type="switch" id="266" x="850" y="400">
+    </component>
+    <component type="xor2" id="173" x="190" y="680">
+        <input number="0" sourceId="138" sourcePin="0" wireId="174">
+        </input>
+        <input number="1" sourceId="158" sourcePin="0" wireId="177">
+            <wireNode x="190" y="800" />
+        </input>
+    </component>
+    <component type="switch" id="256" x="820" y="350">
+    </component>
+    <component type="switch" id="92" x="80" y="100">
+    </component>
+    <component type="and2" id="133" x="440" y="690">
+        <input number="0" sourceId="130" sourcePin="0" wireId="145">
+        </input>
+        <input number="1" sourceId="158" sourcePin="0" wireId="159">
+            <wireNode x="210" y="840" />
+            <wireNode x="440" y="840" />
+        </input>
+    </component>
+    <component type="or2" id="89" x="510" y="160">
+        <input number="0" sourceId="88" sourcePin="0" wireId="98">
+        </input>
+        <input number="1" sourceId="90" sourcePin="0" wireId="100">
+        </input>
+    </component>
+    <component type="custom:components/FullAdder.csc" id="238" x="1070" y="260">
+        <input number="0" sourceId="255" sourcePin="0" wireId="262">
+        </input>
+        <input number="1" sourceId="251" sourcePin="0" wireId="277">
+            <wireNode x="1040" y="330" />
+            <wireNode x="1040" y="290" />
+        </input>
+        <input number="2" sourceId="239" sourcePin="1" wireId="286">
+            <wireNode x="1150" y="400" />
+            <wireNode x="1150" y="340" />
+            <wireNode x="1060" y="340" />
+            <wireNode x="1060" y="310" />
+        </input>
+    </component>
+    <component type="LED" id="153" x="750" y="160">
+        <input number="0" sourceId="89" sourcePin="0" wireId="157">
+        </input>
+    </component>
+    <component type="switch" id="138" x="80" y="670">
+    </component>
+</model>

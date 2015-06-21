@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE model [
+    <!ELEMENT model (component*)>
+    <!ELEMENT component (input*)>
+    <!ATTLIST component
+        type CDATA #REQUIRED
+        id CDATA #REQUIRED
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+    <!ELEMENT input (wireNode*)>
+    <!ATTLIST input
+        number CDATA #REQUIRED
+        sourceId CDATA #REQUIRED
+        sourcePin CDATA #REQUIRED
+        wireId CDATA #REQUIRED>
+    <!ELEMENT wireNode EMPTY>
+    <!ATTLIST wireNode
+        x CDATA #REQUIRED
+        y CDATA #REQUIRED>
+]><model>
+    <component type="custom:components/FullAdder.csc" id="15" x="300" y="210">
+        <input number="0" sourceId="5" sourcePin="0" wireId="23">
+            <wireNode x="300" y="40" />
+        </input>
+        <input number="1" sourceId="6" sourcePin="0" wireId="22">
+            <wireNode x="290" y="240" />
+        </input>
+        <input number="2" sourceId="16" sourcePin="1" wireId="19">
+            <wireNode x="480" y="250" />
+            <wireNode x="480" y="300" />
+            <wireNode x="300" y="300" />
+        </input>
+    </component>
+    <component type="switch" id="4" x="140" y="80">
+    </component>
+    <component type="switch" id="8" x="360" y="80">
+    </component>
+    <component type="ground" id="26" x="390" y="270">
+    </component>
+    <component type="custom:components/FullAdder.csc" id="16" x="410" y="210">
+        <input number="0" sourceId="7" sourcePin="0" wireId="25">
+            <wireNode x="410" y="40" />
+        </input>
+        <input number="1" sourceId="8" sourcePin="0" wireId="24">
+            <wireNode x="400" y="240" />
+        </input>
+        <input number="2" sourceId="26" sourcePin="0" wireId="27">
+        </input>
+    </component>
+    <component type="switch" id="3" x="140" y="20">
+    </component>
+    <component type="switch" id="7" x="360" y="20">
+    </component>
+    <component type="LED" id="12" x="300" y="450">
+        <input number="0" sourceId="9" sourcePin="1" wireId="13">
+            <wireNode x="150" y="250" />
+            <wireNode x="150" y="470" />
+        </input>
+    </component>
+    <component type="switch" id="2" x="30" y="80">
+    </component>
+    <component type="custom:components/FullAdder.csc" id="9" x="80" y="210">
+        <input number="0" sourceId="1" sourcePin="0" wireId="11">
+            <wireNode x="80" y="40" />
+        </input>
+        <input number="1" sourceId="2" sourcePin="0" wireId="10">
+            <wireNode x="70" y="240" />
+        </input>
+        <input number="2" sourceId="14" sourcePin="1" wireId="17">
+            <wireNode x="260" y="250" />
+            <wireNode x="260" y="280" />
+            <wireNode x="80" y="280" />
+        </input>
+    </component>
+    <component type="hexdigit" id="28" x="300" y="370">
+        <input number="0" sourceId="16" sourcePin="0" wireId="29">
+            <wireNode x="490" y="230" />
+            <wireNode x="490" y="350" />
+            <wireNode x="300" y="350" />
+        </input>
+        <input number="1" sourceId="15" sourcePin="0" wireId="30">
+            <wireNode x="380" y="230" />
+            <wireNode x="380" y="340" />
+            <wireNode x="290" y="340" />
+            <wireNode x="290" y="400" />
+        </input>
+        <input number="2" sourceId="14" sourcePin="0" wireId="31">
+            <wireNode x="270" y="230" />
+            <wireNode x="270" y="430" />
+            <wireNode x="340" y="430" />
+        </input>
+        <input number="3" sourceId="9" sourcePin="0" wireId="32">
+            <wireNode x="160" y="230" />
+            <wireNode x="160" y="440" />
+            <wireNode x="350" y="440" />
+            <wireNode x="350" y="380" />
+        </input>
+    </component>
+    <component type="switch" id="6" x="250" y="80">
+    </component>
+    <component type="switch" id="1" x="30" y="20">
+    </component>
+    <component type="custom:components/FullAdder.csc" id="14" x="190" y="210">
+        <input number="0" sourceId="3" sourcePin="0" wireId="21">
+            <wireNode x="190" y="40" />
+        </input>
+        <input number="1" sourceId="4" sourcePin="0" wireId="20">
+            <wireNode x="180" y="240" />
+        </input>
+        <input number="2" sourceId="15" sourcePin="1" wireId="18">
+            <wireNode x="370" y="250" />
+            <wireNode x="370" y="290" />
+            <wireNode x="190" y="290" />
+        </input>
+    </component>
+    <component type="switch" id="5" x="250" y="20">
+    </component>
+</model>

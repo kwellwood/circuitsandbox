@@ -1,0 +1,41 @@
+MUST-DO PRIORITY
+-----------------
+
+HIGH PRIORITY
+--------------
+o create sticky notes
+o modify custom component format so they can be loaded as models? (maintain visual location data)
+
+MEDIUM PRIORITY
+----------------
+o replace all point parameters with x, y (only return Points, never pass them)
+o make connection points store wires instead of wire ids
+o make lc.getwires return a collection of wires
+o use iterators in sandbox for checking if a wire has been clicked
+o get rid of the addwire(id, wire) and addcomponent(id, component) methods if they're unnecessary
+o make componentimage.setstate abstract or part of an interface
+o change undo/redo descriptions to include the commands they will execute
+
+LOW PRIORITY
+-------------
+o convert white in a pasted custom component image to transparent
+o when multiple components are selected with a drag, bring them all to front
+o get toybox to display correct icons even when disabled
+o fix wire nodes displaying on top of components
+o make sandbox autoscroll when dragging a selection
+o allow wire colors to be changed by selecting some and using a pulldown menu
+o store wire colors in the model file
+
+DOCUMENTATION
+--------------
+o check all comments
+o put the model xml doctype in the model class comment, same with custom component
+o put instructions for adding new primitive component somewhere
+
+STATS
+---------
+4/13/05 ~12,000 lines of source code (including whitespace and comments)
+        ~390K of source code
+
+4/25/05 ~13,600 lines of source code (including whitespace and comments)
+        ~425K of source code

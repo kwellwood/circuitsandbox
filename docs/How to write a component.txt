@@ -1,0 +1,40 @@
+**** Instructions for adding a new logic component to Circuit Sandbox ****
+
+0. Create an image of the component in 32-bit png format with a transparent
+background. Write down the pixel locations where the input and output points
+should be.
+
+1. Append the pin coordinates to pinLocations.txt in the Circuit Sandbox
+root folder. The file format is:
+ComponentTypeString:numInputs:numOutputs
+input0_x,input0_y
+input1_x,input1_y
+...
+output0_x,output0_y
+...
+
+2. Duplicate an existing logic component class in the model package and
+refactor it to be named [MyComponent].java.
+
+3. Edit [MyComponent].java:
+    a. Pass the number of inputs and outputs to the super constructor
+    b. Implement the compute() method to handle the logic
+    c. Edit static final public String TYPE_STRING to return correct type
+
+4. Duplicate an existing component image class in the gui package and refactor
+it to be named [MyComponent]Image.java.
+
+5. Edit [MyComponent]Image.java:
+    a. Add the correct image filename to the imageList in the constructor
+    c. Change getTypeString() method to return [MyComponent].TYPE_STRING
+    d. Change toString() method to return the name of the component
+
+6. Modify LogicComponentFactory class in the model package.
+    a. Add an instance of the component to the components map in the constructor
+    b. Modify the if-statement in the buildComponentImage() method to return
+       an instance of [MyComponent]Image when the correct type string is passed
+
+7. Add an instance of [MyComponent]Image class to the correct category in the
+constructor of the Toybox class in the gui package.
+
+8. All done.
