@@ -1,6 +1,7 @@
 Circuit Sandbox v1.0
 
-http://bitbucket.org/kwellwood/circuitsandbox/
+http://github.com/kwellwood/circuitsandbox/
+(Previously hosted at http://bitbucket.org/kwellwood/circuitsandbox/)
 (Previously hosted at http://circuitsandbox.sourceforge.net/)
 
 Authors:
